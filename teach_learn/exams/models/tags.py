@@ -1,6 +1,5 @@
 from django.db import models
 from teach_learn.utils.models import BaseModel
-from .questions import Question
 from .categories import Category
 
 

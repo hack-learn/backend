@@ -28,7 +28,7 @@ AUTH_USER_MODEL = 'users.User'
 SECRET_KEY = 'ds(m3f6#3ariey^1b-%9b@$fi(+zrhon7sh@5ntjd#)y#j%xqs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -47,11 +47,13 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
+    'corsheaders'
 ]
 
 TEACH_LEARN_APPS = [
     'teach_learn.apps.TeachLearnConfig',
     'teach_learn.users.apps.UsersAppConfig',
+    'teach_learn.exams.apps.ExamsAppConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + TEACH_LEARN_APPS

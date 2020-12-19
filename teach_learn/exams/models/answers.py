@@ -6,7 +6,7 @@ from .questions import Question
 class Answer(BaseModel):
     """Answer Model"""
 
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, related_name='answers', on_delete=models.CASCADE)
 
     descrition = models.CharField(max_length=200)
 

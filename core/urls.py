@@ -23,6 +23,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', include(('teach_learn.users.urls', 'users'), namespace='users')),
+    path('api/', include(('teach_learn.users.urls', 'users'), namespace='users')),
+    path('api/', include(('teach_learn.exams.urls', 'exams'), namespace='exams')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
