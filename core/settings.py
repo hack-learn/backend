@@ -33,7 +33,15 @@ SECRET_KEY = 'ds(m3f6#3ariey^1b-%9b@$fi(+zrhon7sh@5ntjd#)y#j%xqs'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+
 CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://hack-learn.netlify.app",
+    "https://hack-learning.herokuapp.com",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000"
+]
 
 # Application definition
 
