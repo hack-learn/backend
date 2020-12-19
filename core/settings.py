@@ -40,7 +40,35 @@ CORS_ALLOWED_ORIGINS = [
     "https://hack-learn.netlify.app",
     "https://hack-learning.herokuapp.com",
     "http://localhost:3000",
-    "http://127.0.0.1:3000"
+    "http://127.0.0.1:3000",
+]
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'hack-learn.netlify.app',
+    'hack-learning.herokuapp.com',
+    'localhost',
+    '127.0.0.1',
 ]
 
 # Application definition
@@ -94,18 +122,6 @@ TEMPLATES = [
             ],
         },
     },
-]
-
-CORS_ALLOW_HEADERS = [
-    'accept',
-    'accept-encoding',
-    'authorization',
-    'content-type',
-    'dnt',
-    'origin',
-    'user-agent',
-    'x-csrftoken',
-    'x-requested-with',
 ]
 
 WSGI_APPLICATION = 'core.wsgi.application'
