@@ -5,8 +5,6 @@ from django.core.validators import RegexValidator
 from rest_framework import serializers
 from teach_learn.users.models import User
 
-
-
 class UserModelSerializer(serializers.ModelSerializer):
     class Meta:
         """class Meta"""

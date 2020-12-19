@@ -7,7 +7,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 
 # from cride.users.serializers.profiles import ProfileModelSerializer
 # from cride.circles.serializers import CircleModelSerializer
-from teach_learn.users.serializers import UserModelSerializer
+from teach_learn.users.serializers.users import UserModelSerializer
 
 
 from teach_learn.users.models import User
