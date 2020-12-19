@@ -27,3 +27,12 @@ or
 ```
 docker-compose down
 ```
+
+## Run remote migrations
+
+heroku run --app hack-learning python manage.py makemigrations
+heroku run --app hack-learning python manage.py migrate
+
+## Run local migrations
+
+docker exet -ti #no_or_name_container
