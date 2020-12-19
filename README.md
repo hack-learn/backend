@@ -1,3 +1,5 @@
+[Demo](https://hack-learning.herokuapp.com/api/)
+
 [See Frontend](https://github.com/hack-learn/frontend)
 
 ## Initialize
@@ -31,6 +33,7 @@ docker-compose down
 ## Run remote migrations
 
 heroku run --app hack-learning python manage.py makemigrations
+
 heroku run --app hack-learning python manage.py migrate
 
 ## Run local migrations
