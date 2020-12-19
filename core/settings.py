@@ -17,8 +17,6 @@ import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
 
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -88,6 +86,18 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
 ]
 
 WSGI_APPLICATION = 'core.wsgi.application'
@@ -175,4 +185,3 @@ sentry_sdk.init(
     # django.contrib.auth) you may enable sending PII data.
     send_default_pii=True
 )
-
