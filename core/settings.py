@@ -91,6 +91,7 @@ THIRD_PARTY_APPS = [
 TEACH_LEARN_APPS = [
     'teach_learn.apps.TeachLearnConfig',
     'teach_learn.users.apps.UsersAppConfig',
+    'teach_learn.exams.apps.ExamsAppConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + TEACH_LEARN_APPS
@@ -98,12 +99,12 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + TEACH_LEARN_APPS
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'core.urls'
