@@ -28,7 +28,7 @@ AUTH_USER_MODEL = 'users.User'
 SECRET_KEY = 'ds(m3f6#3ariey^1b-%9b@$fi(+zrhon7sh@5ntjd#)y#j%xqs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['hack-learning.herokuapp.com', 'localhost', '127.1.0.0']
 
